@@ -21,17 +21,16 @@ public class Department extends JFrame implements ActionListener{
 		add(l1);
 		
 		JLabel l2 = new JLabel("Budget");
-		l2.setBounds(350,10,80,20);
+		l2.setBounds(250,10,80,20);
 		add(l2);
 		
 		Back = new JButton("Back To Reception");
 		Back.addActionListener(this);
-		Back.setBounds(150, 160, 200, 30);
+		Back.setBounds(60, 200, 200, 30);
 		add(Back);
 		
-		
 		table = new JTable();
-		table.setBounds(0, 40, 700, 400);
+		table.setBounds(0, 40, 500, 150);
 		add(table);
 		
 		try {
@@ -50,7 +49,7 @@ public class Department extends JFrame implements ActionListener{
 		Back = new JButton("Back To Reception");
 		Back.addActionListener(this);
 		Back.setBounds(280, 350, 120, 30);
-		add(Back);
+		table.add(Back);
 		
 		setBounds(400, 200, 500, 270);
 		setVisible(true);

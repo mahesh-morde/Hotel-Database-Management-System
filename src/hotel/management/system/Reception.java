@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 
 public class Reception extends JFrame implements ActionListener{
 	
-	JButton quit, logout, pickup, newCustomer, rooms, department, allEmployee, customers, managerInfo, checkout, update, roomStatus, searchRoom;
+	JButton cancel, quit, logout, pickup, newCustomer, rooms, department, allEmployee, customers, managerInfo, checkout, update, roomStatus, searchRoom;
 	
 	Reception(){
 		
@@ -77,12 +77,19 @@ public class Reception extends JFrame implements ActionListener{
 //		logout.addActionListener(this);
 //		add(logout);
 		
+		cancel = new JButton("Back To Dashboard");
+		cancel.setBounds(10,470,200,30);
+		cancel.setForeground(Color.MAGENTA);
+		cancel.addActionListener(this);
+		add(cancel);
+		
 		quit = new JButton("Quit");
 		quit.setBounds(10,510,200,30);
+		quit.setForeground(Color.RED);
 		quit.addActionListener(this);
 		add(quit);
 		
-		ImageIcon i1 = new ImageIcon("/Users/maheshmorde/Applications/Hotel Management System/src/icons/fourth.jpg");		
+		ImageIcon i1 = new ImageIcon("src/icons/fourth.jpg");		
 		JLabel image = new JLabel(i1);
 		image.setBounds(250, 30, 500, 510);
 		add(image);
@@ -132,8 +139,9 @@ public class Reception extends JFrame implements ActionListener{
 //		}else if(ae.getSource() == logout) {
 //			setVisible(false);
 //			System.exit(0);
+		}else if(ae.getSource() == cancel) {
+			setVisible(false);
 		}
-		
 	}
 
 	public static void main(String[] args) {

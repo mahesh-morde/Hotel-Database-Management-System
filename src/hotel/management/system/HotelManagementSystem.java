@@ -9,12 +9,12 @@ import javax.swing.plaf.ColorUIResource;
 public class HotelManagementSystem extends JFrame implements ActionListener{
 
 	HotelManagementSystem(){
-//		setSize(1366, 565);
-//		setLocation(50,150);
-		setBounds(100,100,1366,565);
+//		setSize(1440, 900);
+//		setLocation(0,0);
+//		setBounds(100,100,1366,565);
 		setLayout(null);
 		
-		ImageIcon i1 = new ImageIcon("/Users/maheshmorde/Applications/Hotel Management System/src/icons/first.jpg");
+		ImageIcon i1 = new ImageIcon("src/icons/first.jpg");
 		JLabel image = new JLabel(i1);
 		image.setBounds(0,0,1366,565);
 		add(image);
@@ -35,6 +35,7 @@ public class HotelManagementSystem extends JFrame implements ActionListener{
 		
 		
 		setVisible(true);
+		setBounds(37,140,1366,565);
 		
 		while(true) {
 			text.setVisible(false);

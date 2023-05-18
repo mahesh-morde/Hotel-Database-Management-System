@@ -95,7 +95,7 @@ public class Add_Driver extends JFrame implements ActionListener{
 		cancel.addActionListener(this); 
 		add(cancel);
 		
-		ImageIcon i1 = new ImageIcon("/Users/maheshmorde/Applications/Hotel Management System/src/icons/eleven.jpg");
+		ImageIcon i1 = new ImageIcon("src/icons/eleven.jpg");
 		Image i2 = i1.getImage().getScaledInstance(630, 420, Image.SCALE_DEFAULT);
 		ImageIcon i3 = new ImageIcon(i2);
 		JLabel image = new JLabel(i3);

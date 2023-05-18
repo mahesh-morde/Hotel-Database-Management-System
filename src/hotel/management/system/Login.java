@@ -51,7 +51,7 @@ public class Login extends JFrame implements ActionListener{
 		Cancel.addActionListener(this);
 		add(Cancel);
 		
-		ImageIcon i1 = new ImageIcon("/Users/maheshmorde/Applications/Hotel Management System/src/icons/second.jpg");
+		ImageIcon i1 = new ImageIcon("src/icons/second.jpg");
 		Image i2 = i1.getImage().getScaledInstance(200, 200, Image.SCALE_DEFAULT);
 		ImageIcon i3 = new ImageIcon(i2);
 		JLabel image = new JLabel(i3);
@@ -92,7 +92,7 @@ public class Login extends JFrame implements ActionListener{
 			
 		}else if(ae.getSource() == Cancel) {
 			setVisible(false);
-			
+			System.exit(0);
 		}
 		
 	}

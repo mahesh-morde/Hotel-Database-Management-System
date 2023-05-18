@@ -14,6 +14,7 @@ public class Checkout extends JFrame implements ActionListener{
 	JLabel lblchekouttime, lblchekouttime1, lblcheckin,lblid, text, lblroom, lblroomno,lblchekintime;
 	Choice ccustomer;
 	JCheckBox available;
+	int NUMBER;
 	
 	Checkout(){
 		setLayout(null);
@@ -31,7 +32,7 @@ public class Checkout extends JFrame implements ActionListener{
 		ccustomer.setBounds(150, 80, 150, 25);
 		add(ccustomer); 
 		
-		ImageIcon i1 = new ImageIcon("/Users/maheshmorde/Applications/Hotel Management System/src/icons/tick.png");		
+		ImageIcon i1 = new ImageIcon("src/icons/tick.png");		
 		Image i2 = i1.getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT);
 		ImageIcon i3 = new ImageIcon(i2);
 		JLabel image = new JLabel(i3);
@@ -73,7 +74,7 @@ public class Checkout extends JFrame implements ActionListener{
 		CheckOut.setBounds(185, 300, 150, 30);
 		add(CheckOut);
 		
-		ImageIcon i4 = new ImageIcon("/Users/maheshmorde/Applications/Hotel Management System/src/icons/sixth.jpg");		
+		ImageIcon i4 = new ImageIcon("src/icons/sixth.jpg");		
 		Image i5 = i4.getImage().getScaledInstance(400, 250, Image.SCALE_DEFAULT);
 		ImageIcon i6 = new ImageIcon(i5);
 		JLabel image1 = new JLabel(i6);
@@ -90,7 +91,7 @@ public class Checkout extends JFrame implements ActionListener{
 				ccustomer.add(rs.getString("number"));
 				lblroomno.setText(rs.getString("room"));
 				lblcheckin.setText(rs.getString("chekintime"));
-				
+				NUMBER = Integer.parseInt("number");
 			}
 			
 		}catch(Exception e) {
@@ -100,6 +101,8 @@ public class Checkout extends JFrame implements ActionListener{
 		setBounds(300, 200, 800, 400);
 		setVisible(true);
 	}
+	
+	
 
 	@Override
 	public void actionPerformed(ActionEvent e) {

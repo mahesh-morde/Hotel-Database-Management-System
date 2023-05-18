@@ -113,7 +113,7 @@ public class Update_Check extends JFrame implements ActionListener{
 		back.addActionListener(this);
 		add(back);
 		
-		ImageIcon i1 = new ImageIcon("/Users/maheshmorde/Applications/Hotel Management System/src/icons/nine.jpg");		
+		ImageIcon i1 = new ImageIcon("src/icons/nine.jpg");		
 		JLabel image = new JLabel(i1);
 		image.setBounds(400, 50, 500, 300);
 		add(image);
@@ -162,6 +162,7 @@ public class Update_Check extends JFrame implements ActionListener{
 	        String checkin = tftime.getText();
 	        String paid = tfpaid.getText();
 //	        String pending = tfpending.getText();
+	        
 
 	        try {
 	            DBConnection c = new DBConnection();

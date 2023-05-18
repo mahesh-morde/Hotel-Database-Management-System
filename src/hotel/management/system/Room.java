@@ -16,7 +16,7 @@ public class Room extends JFrame implements ActionListener{
 	Room(){
 		setLayout(null);
 		
-		ImageIcon i1 = new ImageIcon("/Users/maheshmorde/Applications/Hotel Management System/src/icons/eight.jpg");
+		ImageIcon i1 = new ImageIcon("src/icons/eight.jpg");
 		Image i2 = i1.getImage().getScaledInstance(600, 600, Image.SCALE_DEFAULT);
 		ImageIcon i3 = new ImageIcon(i2);
 		JLabel image = new JLabel(i3);

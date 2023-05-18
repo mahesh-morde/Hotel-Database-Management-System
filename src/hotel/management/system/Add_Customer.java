@@ -140,7 +140,7 @@ public class Add_Customer extends JFrame implements ActionListener{
 		Back.addActionListener(this); 
 		add(Back);
 		
-		ImageIcon i1 = new ImageIcon("/Users/maheshmorde/Applications/Hotel Management System/src/icons/fifth.png");
+		ImageIcon i1 = new ImageIcon("src/icons/fifth.png");
 		Image i2 = i1.getImage().getScaledInstance(300, 400, Image.SCALE_DEFAULT);
 		ImageIcon i3 = new ImageIcon(i2);
 		JLabel image = new JLabel(i3);

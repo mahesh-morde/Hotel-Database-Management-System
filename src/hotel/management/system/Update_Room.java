@@ -96,7 +96,7 @@ public class Update_Room extends JFrame implements ActionListener{
 		back.addActionListener(this);
 		add(back);
 		
-		ImageIcon i1 = new ImageIcon("/Users/maheshmorde/Applications/Hotel Management System/src/icons/seventh .jpg");		
+		ImageIcon i1 = new ImageIcon("src/icons/seventh.jpg");		
 		JLabel image = new JLabel(i1);
 		image.setBounds(400, 50, 500, 300);
 		add(image);
